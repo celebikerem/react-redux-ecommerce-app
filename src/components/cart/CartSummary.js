@@ -10,7 +10,7 @@ import {
 } from "reactstrap";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import * as cartActions from "../redux/actions/cartActions";
+import * as cartActions from "../../redux/actions/cartActions";
 
 class CartSummary extends Component {
   renderEmpty() {

@@ -1,15 +1,6 @@
 import React, { useState } from "react";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  NavbarText,
-} from "reactstrap";
-import CartSummary from "../CartSummary";
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav } from "reactstrap";
+import CartSummary from "../cart/CartSummary";
 
 const Navi = (props) => {
   const [isOpen, setIsOpen] = useState(false);
