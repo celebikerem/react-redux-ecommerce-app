@@ -13,7 +13,7 @@ class ProductList extends Component {
 
   addToCart = (product) => {
     this.props.actions.addToCart({ quantity: 1, product });
-    alertify.success(product.productName + "added to cart.");
+    alertify.success(product.productName + " added to cart.");
   };
 
   render() {
@@ -36,7 +36,7 @@ class ProductList extends Component {
             </tr>
           </thead>
           <tbody>
-            {this.props.prodcts.map((product) => (
+            {this.props.products.map((product) => (
               <tr key={product.id}>
                 <th scope="row">{product.id}</th>
                 <td>{product.productName}</td>
@@ -63,7 +63,7 @@ class ProductList extends Component {
 function mapStateToProps(state) {
   return {
     currentCategory: state.changeCategoryReducer,
-    prodcts: state.productListReducer,
+    products: state.productListReducer,
   };
 }
 
